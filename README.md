@@ -1,4 +1,4 @@
-# CRUD Javascript App: View Page
+# 3. CRUD Javascript App: View Page
 
 You have to make a simple presentation part of a website
 
@@ -12,7 +12,7 @@ Then using JavaScript, you need to implement the following operations on your da
 
 Requirements:
 ●	Responsiveness absolutely not required.
-●	Styling is not important at all. Is up to you.
+●	Styling is not important at all.
 
 # 4. CRUD Javascript App: Create/Edit Pages
 
@@ -25,5 +25,5 @@ Bonus points are provided for this work, if you implement a styled modal window 
 
 Requirements:
 ●	Responsiveness absolutely not required.
-●	Styling is not important at all. Is up to you.
+●	Styling is not important at all.
 
