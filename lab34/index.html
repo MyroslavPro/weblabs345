@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="#">
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <!-- UUID library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    
+  </head>
+</head>
+<body>
+  <operator>
+    <form id="create-card">
+              <h2>Create Card</h2>
+              <div class="form-group">
+                <label for="exampleInputNameOfItem1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name_of_item_input"/>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPrice1" class="form-label">Price($)</label>
+                <input type="number" step="0.01" class="form-control" id="price_input" />
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputCountry1" class="form-label">Origin</label>
+                  <input type="text" class="form-control" id="country_input"/>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputProvider1" class="form-label">Provider</label>
+                  <input type="text" class="form-control" id="provider_input" />
+              </div>
+              <button id="submit_button" type="submit" class="submit_button1">
+                Submit
+              </button>
+      </form>    
+
+      <form id="finder-form" class="finder">
+          <div class="form-group">
+              <label for="exampleInputFindCard1" class="form-label">Finder by name</label>
+              <input type="text" class="form-input" id="find_item_input" />
+              <small type="text">Please enter what you are looking for...</small>
+          </div>
+          <buttons>
+              <button id="find_button" type="button" class="find_button">
+                  Find
+              </button>
+              <button id="clear_button" type="button" class="cancel_button">
+                Cancel
+              </button>
+          </buttons>
+      </form>
+      
+      <form id="count-form">
+        <h5 style="margin-top:1em;">Manage Items</h5>
+          <div class="sort">
+              Sort by price
+              <input type="checkbox" id="sort_checkbox">
+          </div>
+          <div class="form-group">
+              <span>Count total price of items</span>
+              <button class="count_button" id="count_button" type="button">Count</button>
+              <div>Total price: <span id="sum_price">0</span> $.</div>
+          </div>
+      </form>
+    </operator> 
+
+    <ul id="items_container" class="items-conteiner">
+    </ul>
+    <script type="module" src="./main.js"> </script>
+</body>
+</html>
