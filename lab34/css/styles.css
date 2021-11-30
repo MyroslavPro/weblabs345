@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+operator{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal_cont{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+}
+.default_button{
+    margin: auto;
+    background-color: #0275D8;
+    color: #fff;
+    min-width: 5em;
+    height: 2.5em;
+    font-weight: bolder;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 3%;
+    max-width: 420px;
+    border-radius: 5px;
+    padding: 1em;
+    background-color:#FFFFFF;
+	border: 2px solid darkgrey;
+}
+form .form-group{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form .submit_button1{
+    background-color: #F53838;
+    color: white;
+    border-radius: 8px;
+    font-weight: bolder;
+    align-self: center;
+    width: 16em;
+    padding: 1.5em;
+    box-shadow: 0 50px 34px -20px rgba(245, 56, 56, 0.35);   
+}
+
+form label{
+    font-size: larger;
+    font-weight: bolder;
+}
+form input{
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+form .count_button{
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    max-width: 200px;
+}
+
+.item-card {
+    margin: 2em;
+    margin-left: 3em;
+    max-width: 420px;
+  }
+  
+.item-container__image {
+  min-height: 200px;
+  max-width: 420px;
+  cursor: pointer;
+}
